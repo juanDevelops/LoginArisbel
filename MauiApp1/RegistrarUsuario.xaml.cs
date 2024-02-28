@@ -19,7 +19,7 @@ public partial class NewPage1 : ContentPage
     {
         if (db.InsertarUsuario(tbNombre.Text, tbEmail.Text, tbTelefono.Text, 'f', dpFechaNacimiento.Date, txtContraseña.Text))
         {
-            await DisplayAlert("Aviso", "Bienvenido", "Ok");
+            await DisplayAlert("Aviso", "Registrado Correctamente", "Ok");
         }
         else
         {

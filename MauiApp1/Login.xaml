@@ -18,13 +18,13 @@
             <RowDefinition Height = "Auto"/>
             <RowDefinition Height = "50"/>
         </Grid.RowDefinitions>
-        <Image Source="usuario.png" Grid.Column="1" Grid.Row="1" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" HeightRequest="100"></Image>
+        <Image Source="usuario.jpg" Grid.Column="1" Grid.Row="1" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" HeightRequest="100"></Image>
         <VerticalStackLayout Grid.Column="1" Grid.Row="2" Spacing="10" >
-            <Entry x:Name="User" Keyboard="Email" Placeholder="Usuario" ></Entry>
-            <Entry x:Name="ePassword" IsPassword="True" Placeholder="Contraseña"></Entry>
+            <Entry x:Name="User" Keyboard="Email" Placeholder="USUARIO" ></Entry>
+            <Entry x:Name="ePassword" IsPassword="True" Placeholder="CONTRASEÑA"></Entry>
         </VerticalStackLayout>
         <HorizontalStackLayout Grid.Column="1" Grid.Row="3" Spacing="20">
-            <Button x:Name="btnIngresar" Text="Ingresar" BackgroundColor="Green" TextColor="Black" CornerRadius="20" Clicked="btnIngresar_Clicked"/>
+            <Button x:Name="btnIngresar" Text="Entrar" BackgroundColor="Green" TextColor="Black" CornerRadius="20" Clicked="btnIngresar_Clicked"/>
             <Button x:Name="btnCancelar" Text="Nuevo Usuario" BackgroundColor="Red" TextColor="Black" CornerRadius="20" Clicked="btnCancelar_Clicked_2" />
         </HorizontalStackLayout>
 

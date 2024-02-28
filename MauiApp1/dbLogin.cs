@@ -9,7 +9,7 @@ namespace MauiApp1
 {
     public class dbLogin
     {
-        String cadenaConexion = $"server=192.168.62.205;port=3306;database=loginBD;uid=juan;password=Abc123.;SSL Mode=None";
+        String cadenaConexion = $"server=192.168.1.109;port=3306;database=loginDB;uid=appmovil;password=Olivas27-;SSL Mode=None";
         public string errorMessage = "";
         public bool InsertarUsuario(string nombre, string telefono, string email, char genero, DateTime fechaNacimiento, string contraseña)
         {
@@ -18,7 +18,7 @@ namespace MauiApp1
 
             using (var connection = new MySqlConnection(cadenaConexion))
             {
-                string query = @"INSERT INTO users (nombre, telefono, email, genero, fecha_nacimiento, contraseña) 
+                string query = @"INSERT INTO users (nombre, telefono, email, genero, fechaNacimiento, contraseña) 
                                  VALUES (@Nombre, @Telefono, @Email, @Genero, @FechaNacimiento, @Contraseña)";
 
                 using (var command = new MySqlCommand(query, connection))

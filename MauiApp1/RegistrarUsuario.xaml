@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.NewPage1"
-             Title="NewPage1">
+             Title="REGISTRAR NUEVO USUARIO">
 
     <Grid Padding="20">
         <Grid.ColumnDefinitions>
@@ -25,21 +25,21 @@
         </Grid.RowDefinitions>
 
         <!-- Nombre -->
-        <Entry Grid.Column="1" Grid.Row="0" x:Name="tbNombre" Placeholder="Nombre completo"   Margin="0,5,0,0" />
+        <Entry Grid.Column="1" Grid.Row="0" x:Name="tbNombre" Placeholder="Ingrese su nombre"   Margin="0,5,0,0" />
 
         <!-- Teléfono -->
-        <Entry Grid.Column="1" Grid.Row="1" x:Name="tbTelefono" Placeholder="Teléfono"   Margin="0,5,0,0" />
+        <Entry Grid.Column="1" Grid.Row="1" x:Name="tbTelefono" Placeholder="Correo"   Margin="0,5,0,0" />
 
         <!-- Email -->
-        <Entry Grid.Column="1" Grid.Row="2" x:Name="tbEmail" Placeholder="Email"   Margin="0,5,0,0" />
+        <Entry Grid.Column="1" Grid.Row="2" x:Name="tbEmail" Placeholder="Telefono"   Margin="0,5,0,0" />
 
         <!-- Género -->
-        <Label Grid.Column="1" Grid.Row="3" Text="Género:" TextColor="#6E6E6E" Margin="0,10,0,0"/>
+        <Label Grid.Column="1" Grid.Row="3" Text="Sexo:" TextColor="#6E6E6E" Margin="0,10,0,0"/>
         <StackLayout Grid.Column="1" Grid.Row="4" Orientation="Horizontal">
-            <CheckBox x:Name="cbMasculino" Color="#007bff"/>
-            <Label Text="Masculino" VerticalOptions="Center" TextColor="#6E6E6E"/>
-            <CheckBox x:Name="cbFemenino" Color="#007bff"/>
-            <Label Text="Femenino" VerticalOptions="Center" TextColor="#6E6E6E"/>
+            <CheckBox x:Name="cbMasculino" Color="#DC3545"/>
+            <Label Text="Hombre" VerticalOptions="Center" TextColor="#6E6E6E"/>
+            <CheckBox x:Name="cbFemenino" Color="#DC3545"/>
+            <Label Text="Mujer" VerticalOptions="Center" TextColor="#6E6E6E"/>
         </StackLayout>
 
         <!-- Fecha de nacimiento -->
@@ -49,30 +49,28 @@
         <!-- Contraseña y Repetir Contraseña -->
         <StackLayout Grid.Column="1" Grid.Row="7" Margin="0,10,0,0">
             <Entry x:Name="txtContraseña" Placeholder="Contraseña" IsPassword="True" />
-            <Entry x:Name="txtRepetirContraseña" Placeholder="Repetir Contraseña" IsPassword="True"  Margin="0,5,0,0"/>
+            <Entry x:Name="txtRepetirContraseña" Placeholder="Confirmar Contraseña" IsPassword="True"  Margin="0,5,0,0"/>
         </StackLayout>
 
         <!-- Botones -->
-        <StackLayout Grid.Column="1" Grid.Row="8" Orientation="Horizontal" HorizontalOptions="End" Margin="0,10,0,0">
-            <Button x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked" WidthRequest="120" HeightRequest="40" BackgroundColor="#007bff" TextColor="#FFFFFF" Margin="5"/>
-            <Button x:Name="btnCancelar" Text="Cancelar" Clicked="btnCancelar_Clicked" WidthRequest="120" HeightRequest="40" BackgroundColor="#DC3545" TextColor="#FFFFFF" Margin="5"/>
+        <StackLayout Grid.Column="1" Grid.Row="9" Orientation="Horizontal" HorizontalOptions="End" Margin="0,25,40,0">
+            <Button x:Name="btnGuardar" Text="GUARDAR" Clicked="btnGuardar_Clicked" WidthRequest="120" HeightRequest="40" BackgroundColor="#007bff" TextColor="#FFFFFF" Margin="10"/>
+            <Button x:Name="btnCancelar" Text="CANCELAR" Clicked="btnCancelar_Clicked" WidthRequest="120" HeightRequest="40" BackgroundColor="#DC3545" TextColor="#FFFFFF" Margin="10"/>
         </StackLayout>
         <VerticalStackLayout  Grid.Column="1" Grid.Row="9" >
             <VerticalStackLayout Spacing="5" Padding="3,0" VerticalOptions="CenterAndExpand">
 
-                <Button Text="Obtener Galeria" Clicked="Button_Clicked"   WidthRequest="150" HeightRequest="40" VerticalOptions="CenterAndExpand"/>
-                <Image x:Name="imgUsuario" Aspect="AspectFill" HeightRequest="100" WidthRequest="100" HorizontalOptions="Center" VerticalOptions="Center"/>
-
+                
 
             </VerticalStackLayout>
 
         </VerticalStackLayout>
         <VerticalStackLayout Grid.Column="1" Grid.Row="10" HorizontalOptions="Center">
             <StackLayout Spacing="1" Padding="3,0" Orientation="Horizontal">
-                <Entry x:Name="EntryNombreUsuario" Placeholder="Nombre de usuario" WidthRequest="150" HeightRequest="40"/>
-                <Entry x:Name="EntryNuevaContrasena" Placeholder="Nueva contraseña" IsPassword="True" WidthRequest="110" HeightRequest="40"/>
+                <Entry x:Name="EntryNombreUsuario" Placeholder="Usuario" WidthRequest="130" HeightRequest="40"/>
+                <Entry x:Name="EntryNuevaContrasena" Placeholder="Nueva contraseña" IsPassword="True" WidthRequest="125" HeightRequest="40"/>
             </StackLayout>
-            <Button Text="Modificar contraseña" Clicked="Button_Clicked_1" WidthRequest="220" HeightRequest="40"/>
+            <Button Text="Actualizar Contraseña" Clicked="Button_Clicked_1" WidthRequest="225" HeightRequest="60"/>
         </VerticalStackLayout>
     </Grid>
 </ContentPage>
