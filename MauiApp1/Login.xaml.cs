@@ -17,10 +17,6 @@ namespace MauiApp1
            
         }
 
-        private async void btnGuardar_Clicked(object sender, EventArgs e)
-        {
-            
-        }
 
 
         private void Button_Clicked(object sender, EventArgs e)
@@ -40,14 +36,15 @@ namespace MauiApp1
             }
         }
 
-        private void btnCancelar_Clicked_1(object sender, EventArgs e)
-        {
-
-        }
 
         private async void btnCancelar_Clicked_2(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new NewPage1());
+        }
+
+        private async void btnRecuperarContraseña_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new RecuperarContraseña());
         }
     }
 

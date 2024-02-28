@@ -54,8 +54,8 @@
 
         <!-- Botones -->
         <StackLayout Grid.Column="1" Grid.Row="9" Orientation="Horizontal" HorizontalOptions="End" Margin="0,25,40,0">
-            <Button x:Name="btnGuardar" Text="GUARDAR" Clicked="btnGuardar_Clicked" WidthRequest="120" HeightRequest="40" BackgroundColor="#007bff" TextColor="#FFFFFF" Margin="10"/>
-            <Button x:Name="btnCancelar" Text="CANCELAR" Clicked="btnCancelar_Clicked" WidthRequest="120" HeightRequest="40" BackgroundColor="#DC3545" TextColor="#FFFFFF" Margin="10"/>
+            <Button x:Name="btnGuardar" Text="GUARDAR" Clicked="btnGuardar_Clicked" WidthRequest="120" HeightRequest="40" BackgroundColor="BlueViolet" TextColor="#FFFFFF" Margin="10"/>
+            <Button x:Name="btnCancelar" Text="CANCELAR" Clicked="btnCancelar_Clicked" WidthRequest="120" HeightRequest="40" BackgroundColor="AliceBlue" TextColor="#000" Margin="10"/>
         </StackLayout>
         <VerticalStackLayout  Grid.Column="1" Grid.Row="9" >
             <VerticalStackLayout Spacing="5" Padding="3,0" VerticalOptions="CenterAndExpand">

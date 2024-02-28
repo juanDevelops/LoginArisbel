@@ -16,6 +16,7 @@
             <RowDefinition Height = "150"/>
             <RowDefinition Height = "120"/>
             <RowDefinition Height = "Auto"/>
+            <RowDefinition Height = "Auto"/>
             <RowDefinition Height = "50"/>
         </Grid.RowDefinitions>
         <Image Source="usuario.jpg" Grid.Column="1" Grid.Row="1" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" HeightRequest="100"></Image>
@@ -24,10 +25,10 @@
             <Entry x:Name="ePassword" IsPassword="True" Placeholder="CONTRASEÑA"></Entry>
         </VerticalStackLayout>
         <HorizontalStackLayout Grid.Column="1" Grid.Row="3" Spacing="20">
-            <Button x:Name="btnIngresar" Text="Entrar" BackgroundColor="Green" TextColor="Black" CornerRadius="20" Clicked="btnIngresar_Clicked"/>
-            <Button x:Name="btnCancelar" Text="Nuevo Usuario" BackgroundColor="Red" TextColor="Black" CornerRadius="20" Clicked="btnCancelar_Clicked_2" />
+            <Button x:Name="btnIngresar" Text="Entrar" BackgroundColor="BlueViolet" TextColor="AliceBlue" CornerRadius="20" Clicked="btnIngresar_Clicked" WidthRequest="200"/>
+            <Button x:Name="btnCancelar" Text="Nuevo Usuario" BackgroundColor="AliceBlue" TextColor="Black" CornerRadius="20" Clicked="btnCancelar_Clicked_2" WidthRequest="200"/>
         </HorizontalStackLayout>
-
+        <Button x:Name="btnRecuperarContraseña" Grid.Column="1" Grid.Row="4" Text="Recuperar Contraseña" BackgroundColor="AliceBlue" TextColor="Black" CornerRadius="20" Clicked="btnRecuperarContraseña_Clicked" HorizontalOptions="FillAndExpand" WidthRequest="400" />
 
     </Grid>
 
